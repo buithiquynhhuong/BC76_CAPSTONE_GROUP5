@@ -817,6 +817,10 @@ footer {
   font-size: 1.1rem;
   color: #97a1a9;
 }
+
+.item_footer .text {
+  padding-left: 0;
+}
 .item_footer .text a:hover {
   color: #ffffff;
 }
