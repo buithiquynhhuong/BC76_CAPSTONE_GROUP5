@@ -31,6 +31,8 @@
     <!--     css fancybox-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 
+    <!--    animate-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- (Optional) Use CSS or JS implementation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
@@ -88,7 +90,8 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
 
-                        <ul class="dropdown-menu position-absolute nav_drop_menu" aria-labelledby="navbarDropdownMenuLink">
+                        <ul class="dropdown-menu position-absolute nav_drop_menu"
+                            aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" href="#">BLOG POST</a></li>
                             <li><a class="dropdown-item" href="#">404 PAGE</a></li>
                         </ul>
@@ -115,7 +118,7 @@
                     <img src="./img/b4.jpg" class="d-block w-100  position-absolute" alt="...">
                     <div class="overlay position-absolute"></div>
                     <div class="container">
-                        <div class="title_carousel ">
+                        <div class="title_carousel wow animate__animated animate__flipInX">
                             <h1>We will solve your issues <br> our vision to your future</h1>
                             <p>Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
                                 dolore <br> magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
@@ -849,6 +852,15 @@
                 slidesToShow: 1,
             });
         });
+    </script>
+
+    <!--    cdn wow.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--    code js wow-->
+    <script>
+        new WOW().init();
     </script>
 </body>
 <!-- Link JS -->
