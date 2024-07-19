@@ -33,8 +33,6 @@ header.navbarjs {
   width: 100%;
   background-color: transparent;
   color: white;
-  padding: 5px;
-  transition: all 0.5s;
 }
 nav {
   justify-content: center;
@@ -58,6 +56,24 @@ nav {
 }
 
 /* menu */
+
+.bg_header {
+  background-color: transparent; /* Màu nền mặc định */
+  padding: 0;
+}
+
+#tranform_bg_nav:checked ~ .bg_header {
+  background-color: rgba(0, 0, 0, 0.8) !important; /* Màu nền khi checked */
+}
+
+header.navbarjs.scrolled #tranform_bg_nav:checked ~ .bg_header {
+  background-color: #ffffff !important; /* Màu nền khi checked */
+}
+
+header.navbarjs.scrolled .navbar.bg_header {
+  background-color: #ffffff !important; /* Màu nền mới khi cuộn */
+}
+
 nav ul {
   display: flex;
   align-items: center;
@@ -77,9 +93,17 @@ nav ul li a.nav-link {
 .navbar-expand-lg .navbar-collapse {
   justify-content: flex-end;
 }
+.svg-inline--fa.fa-bars {
+  color: white !important;
+  padding: 5px;
+}
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
 /* scroll nav */
 header.navbarjs.scrolled {
   background-color: #ffffff; /* Màu nền mới khi cuộn */
+  padding: 5px 0px;
 }
 header.navbarjs.scrolled .logo_header a,
 header.navbarjs.scrolled .menu_header .nav-item a,
@@ -123,6 +147,11 @@ nav ul li a:hover {
 }
 .dropdown-menu {
   --bs-dropdown-link-active-bg: none; /*reset css cho dropdown menu khi click*/
+  text-align: center;
+}
+.li_dropdown-menu {
+  width: 100%;
+  margin-right: 0;
 }
 .nav_drop_menu {
   bottom: 0;
@@ -460,7 +489,7 @@ nav ul li a:hover {
 /* css project */
 .project {
   background-color: #f8f9fa;
-  padding: 100px 0;
+  padding: 100px 0px 50px 0px;
 }
 .title_project {
   text-align: center;
@@ -925,15 +954,14 @@ footer {
   }
   .bg-secondary {
     margin-top: 10px;
-    background-color: rgba(0, 0, 0, 0.8) !important;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+    /* background-color: rgba(0, 0, 0, 0.8) !important; */
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.12); */
   }
   .bg-secondary .navbar-nav .nav-item a {
     color: white;
   }
   header.navbarjs.scrolled .bg-secondary {
     background-color: #ffffff !important;
-    border: 1px solid #ddd;
     border-top: none;
   }
 
