@@ -1,5 +1,5 @@
 window.addEventListener("scroll", function () {
-  var navbar = document.getElementById("navbarjs");
+  let navbar = document.getElementById("navbarjs");
 
   if (window.scrollY > 80) {
     navbar.classList.add("scrolled");
@@ -10,10 +10,10 @@ window.addEventListener("scroll", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   // Truy cập button class 'navbar-toggler'
-  var toggleButton = document.querySelector(".navbar-toggler");
+  let toggleButton = document.querySelector(".navbar-toggler");
 
   // Truy cập checkbox ID 'tranform_bg_nav'
-  var checkbox = document.getElementById("tranform_bg_nav");
+  let checkbox = document.getElementById("tranform_bg_nav");
 
   // Lắng nghe sự kiện 'click' trên nút button
   toggleButton.addEventListener("click", function () {

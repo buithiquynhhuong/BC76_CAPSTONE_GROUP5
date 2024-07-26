@@ -60,6 +60,7 @@ nav {
 .bg_header {
   background-color: transparent; /* Màu nền mặc định */
   padding: 0;
+  transition: all 0.5s;
 }
 
 #tranform_bg_nav:checked ~ .bg_header {
