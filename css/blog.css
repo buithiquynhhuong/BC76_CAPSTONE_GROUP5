@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+.container {
+  width: 1140px;
+}
+
+.blog .blog_img {
+  overflow: hidden;
+}
+
+.blog .blog_img img {
+  transition: all 0.5s;
+}
+
+.blog .blog_img img:hover {
+  transform: scale(1.1);
+}
+
+.blog .blog_text h5 {
+  color: #999;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.blog .blog_text .big_title {
+  text-decoration: none;
+}
+
+.blog .blog_text .hello {
+  color: #3f3a64;
+  transition: all 0.5s;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.blog .blog_text .hello:hover {
+  color: #009f4d;
+  cursor: pointer;
+}
+
+.blog .blog_left a {
+  text-decoration: none;
+}
+
+.blog .blog_left .short_sub {
+  color: #999 !important;
+}
+
+.blog .blog_left .long_sub {
+  text-decoration: none;
+  color: #3f3a64;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+
+.blog .blog_left .long_sub:hover {
+  color: #009f4d;
+  cursor: pointer;
+}
+
+.blog .blog_text .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog .blog_right p {
+  color: #999;
+}
+
+.blog .number .active {
+  width: 40px;
+  height: 40px;
+  background-color: #009f4d;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+}
+
+.number .number_item {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 5px;
+}
+
+.blog .number .second {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: white;
+  text-align: center;
+  color: #666;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.blog .number .second:hover {
+  background-color: #009f4d;
+  color: white;
+}
+
+.blog .number .third {
+  display: inline-block;
+  width: 70px;
+  height: 40px;
+  line-height: 40px;
+  background-color: white;
+  text-align: center;
+  color: #666;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.blog .number .third:hover {
+  background-color: #009f4d;
+  color: white;
+}
+
+.blog .number_2 {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 5px;
+}
+
+.blog .number_2 .first a {
+  display: inline-block;
+  width: 70px;
+  height: 40px;
+  line-height: 40px;
+  background-color: white;
+  text-align: center;
+  color: #666;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.blog .number_2 .first:hover a {
+  background-color: #009f4d;
+  color: white;
+}
