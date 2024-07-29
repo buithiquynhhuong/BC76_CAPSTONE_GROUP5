@@ -74,17 +74,17 @@
 .back_to_home:hover {
   color: #009f4d;
 }
-@media screen and (max-width: 200px) {
+@media screen and (max-width: 500px) {
   .title_carousel h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .title_carousel p {
     font-size: 1rem !important;
   }
-  .title_404gage h1 {
-    font-size: 4rem;
+  .title_404page h1 {
+    font-size: 2rem !important;
   }
-  .title_404gage h2 {
+  .title_404page h2 {
     font-size: 1rem;
   }
   .title_404page p {
@@ -96,5 +96,7 @@
   .form_404page button {
     padding: 15px 20px;
   }
+  .title_footer h5 {
+    font-size: 1rem;
+  }
 }
-
