@@ -36,11 +36,129 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
     />
-
-    <link rel="stylesheet" href="./css/header.css" />
+    <!-- link css  -->
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/about.css" />
   </head>
   <body>
+    <header class="navbarjs" id="navbarjs">
+      <input
+        type="checkbox"
+        id="tranform_bg_nav"
+        class="d-none position-absolute"
+      />
+      <nav class="navbar navbar-expand-lg w-100 bg_header">
+        <div class="container">
+          <div class="logo_header">
+            <a href="index.html">
+              <span class="fa fa-align-right"></span>
+              Corpvision
+              <span>Vision to your Future</span>
+            </a>
+          </div>
+          <button
+            class="navbar navbar-toggler bg-success"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div
+            class="collapse navbar-collapse menu_header justify-content-evenly"
+            id="navbarToggleExternalContent"
+          >
+            <ul class="navbar-nav bg-secondary">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Services</a>
+              </li>
+              <li
+                class="li_dropdown-menu nav-item position-relative li_drop_menu"
+              >
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#!"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Pages</a
+                >
+
+                <ul
+                  class="dropdown-menu position-absolute nav_drop_menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="./blog.html">BLOG POST</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./404page.html">404 PAGE</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="search_header">
+            <a href="#!"><i class="fa fa-search"></i></a>
+            <a href="#!"><i class="gg-moon"></i></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="carousel position-relative overflow-hidden">
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active position-relative">
+            <img
+              src="./img/b1.jpg"
+              class="d-block w-100 position-absolute"
+              alt="..."
+            />
+            <div class="overlay position-absolute"></div>
+            <div class="container">
+              <div class="title_carousel text-center">
+                <h1
+                  class="wow animate__animated animate__flipInX animate__delay-1s"
+                >
+                  About us
+                </h1>
+                <p class="wow animate__animated animate__fadeInDown">
+                  Experience you can trust, service you can count on.
+                </p>
+              </div>
+              <div
+                class="cta_carousel text-center pt-3 wow animate__animated animate__fadeInUp animate__delay-1s"
+              >
+                <a href="#" class="btn btn-success">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <div class="button_right_sidebar">
       <span class="fa-solid fa-angles-right"></span>
     </div>
@@ -64,15 +182,14 @@
     </div>
     <!-- about  -->
     <section class="about">
-      <div class="container py-5">
-        <div class="about_content py-5">
+      <div class="container">
+        <div class="about_content">
           <div class="row">
-            <div class="col-lg-6 about_left">
-              <div class="img">
+            <div class="col-lg-6 col-12 about_left">
+              <div class="img position-relative">
                 <img src="./img/about2.jpg" alt="" />
                 <div class="bg_shape"></div>
               </div>
-              <div class="img_bg"></div>
               <div class="about_box">
                 <div class="mb-1 about_info">
                   <h5>25+</h5>
@@ -83,7 +200,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 mt-lg-0 mt-xl-5 mt-5 about_right">
+            <div class="col-lg-6 col-12 mt-lg-0 mt-xl-5 mt-5 about_right">
               <!-- title  -->
               <div class="title">
                 <p>ABOUT OUR COMPANY</p>
@@ -528,7 +645,91 @@
         </div>
       </div>
     </section>
+    <footer>
+      <div class="container">
+          <div class=" row content_footer justify-content-center pt-5">
+
+              <div class="item_footer col-12 col-lg-4 pb-5">
+                  <a href="#!">
+                      <div class="logo_footer pb-3">
+                          <span class="fa fa-align-right"></span>
+                          Corpvision
+                          <span class="d-block ps-5">Vision to your
+                              Future</span>
+                      </div>
+                      <div class="text">
+                          <span>Lorem ipsum viverra feugiat. Pellen
+                              tesque libero ut justo, ultrices in
+                              ligula.
+                              Semper at
+                              tempufddfel. Lorem ipsum dolor
+                              sit amet Semper at elit team
+                              advisors.</span>
+                      </div>
+                      <div class="icon_social_footer pt-3">
+                          <a href="#!"><i class="fab fa-facebook-f"></i></a>
+                          <a href="#!"><i class="fab fa-instagram"></i></a>
+                          <a href="#!"><i class="fab fa-twitter"></i></a>
+                          <a href="#!"><i class="fab fa-linkedin"></i></a>
+                      </div>
+                  </a>
+              </div>
+
+              <div class="item_footer col-12 col-lg-4 pb-5">
+                  <div class="title_footer">
+                      <h5>CONTACT INFO</h5>
+                      <ul class="text">
+                          <li>Address : Corp Vision, 343 marketing,
+                              #21 cravel 1st lane street, NY -
+                              62617.</li>
+                          <li>Phone Number : <a href="#!">+1(21) 234
+                                  4567</a></li>
+                          <li>Email : <a href="#!">info@example.com</a>
+                          </li>
+                          <li>Support : <a href="#!">info@support.com</a>
+                          </li>
+                      </ul>
+                  </div>
+                  </a>
+              </div>
+
+              <div class="item_footer col-6 col-lg-2 pb-5">
+                  <div class="title_footer">
+                      <h5>CATEGORIES</h5>
+                      <ul class="text">
+                          <li><a href="#!">Marketing Strategy</a>
+                          </li>
+                          <li><a href="#!">Startup Business</a></li>
+                          <li><a href="#!">Web development</a></li>
+                      </ul>
+                  </div>
+                  </a>
+              </div>
+
+              <div class="item_footer col-6 col-lg-2 pb-5">
+                  <div class="title_footer">
+                      <h5>META</h5>
+                      <ul class="text">
+                          <li><a href="#!">Log in</a></li>
+                          <li><a href="#!">Entries feed</a></li>
+                          <li><a href="#!">Comments feed</a></li>
+                          <li><a href="#!">WordPress.org</a></li>
+                      </ul>
+                  </div>
+                  </a>
+              </div>
+
+          </div>
+      </div>
+      <div class="container-fuild footer_bottom">
+          <div class="text-center py-3 container">
+              <span>© 2024 Corp Vision All Rights Reserved |
+                  WordPress Theme by <a href="#!">W3Layouts</a>.</span>
+          </div>
+      </div>
+  </footer>
   </body>
+  
 
   <!-- boostrap  -->
   <script
