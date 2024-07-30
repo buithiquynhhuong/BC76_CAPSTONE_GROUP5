@@ -81,7 +81,7 @@ nav ul {
   margin: 0;
 }
 nav ul li {
-  margin-right: 30px;
+  padding-right: 30px;
   text-transform: uppercase;
 }
 nav ul li a.nav-link {
@@ -141,6 +141,9 @@ nav ul li a:hover {
 }
 
 /* drop menu */
+.bg_header .fa-solid.fa-bars {
+  color: white;
+}
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
   /*reset css cho dropdown menu*/
@@ -152,7 +155,7 @@ nav ul li a:hover {
 }
 .li_dropdown-menu {
   width: 100%;
-  margin-right: 0;
+  /* margin-right: 30px; */
 }
 .nav_drop_menu {
   bottom: 0;
@@ -968,5 +971,10 @@ footer {
 
   .nav_drop_menu {
     position: relative !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav ul li {
+    padding-right: 0px;
   }
 }
