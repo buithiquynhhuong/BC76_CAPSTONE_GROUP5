@@ -174,6 +174,7 @@ body {
   font-weight: 600;
   line-height: 2.5rem;
   margin-bottom: 3rem;
+  color: white;
 }
 .form_item {
   display: grid;
@@ -428,6 +429,7 @@ body .cd-top--is-visible {
   right: 20px;
   bottom: 20px;
   font-size: 15px;
+  line-height: 50px;
   background-color: #009f4d;
   color: white;
   opacity: 0;

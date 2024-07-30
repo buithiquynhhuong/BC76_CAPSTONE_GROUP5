@@ -33,7 +33,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
   <!-- Link gg icon -->
   <link href="https://unpkg.com/css.gg@2.0.0/icons/css/moon.css" rel="stylesheet" />
-
+  <link rel="stylesheet" href="./css/about.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/Services.css" />
 </head>
 
@@ -41,7 +42,7 @@
   <header class="navbarjs" id="navbarjs">
     <nav class="container navbar navbar-expand-lg w-100">
       <div class="logo_header">
-        <a href="#">
+        <a href="./index.html">
           <span class="fa fa-align-right"></span>
           Corpvision
           <span>Vision to your Future</span>
@@ -53,24 +54,24 @@
       <div class="collapse navbar-collapse menu_header justify-content-evenly" id="navbarToggleExternalContent">
         <ul class="navbar-nav bg-secondary">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="./about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="./Services.html">Services</a>
           </li>
           <li class="nav-item position-relative li_drop_menu">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
 
             <ul class="dropdown-menu position-absolute nav_drop_menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">BLOG POST</a></li>
-              <li><a class="dropdown-item" href="#">404 PAGE</a></li>
+              <li><a class="dropdown-item" href="./blog.html">BLOG POST</a></li>
+              <li><a class="dropdown-item" href="./404page.html">404 PAGE</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="./Contact.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -80,7 +81,29 @@
       </div>
     </nav>
   </header>
-
+  <!--  side bar  -->
+  <div class="button_right_sidebar">
+    <span class="fa-solid fa-angles-right"></span>
+  </div>
+  <div class="right_sidebar">
+    <div class="right_sidebar_nav">
+      <div class="sidebar_item">
+        <a href="#">
+          <i class="fa fa-arrow-left"></i>
+          <p>Back</p>
+        </a>
+        <a href="#">
+          <i class="fa fa-download"></i>
+          <p>Download</p>
+        </a>
+        <a href="#">
+          <i class="fa fa-shopping-cart"></i>
+          <p>Buy</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- end side bar  -->
   <section class="banner">
     <div class="banner_item position-relative text-center">
       <div class="banner_text pt-4 text-white">
@@ -232,12 +255,12 @@
       </div>
     </div>
   </section>
-  <section class="project vh-100 position-relative">
+  <section class="project position-relative">
     <div class="project_content position-relative">
       <img class="w-100 h-100 object-fit-cover position-absolute" src="./img/Services.jpg" alt="" />
       <div class="container py-lg-5 py-md-4 py-sm-2 position-relative z-2">
         <div class="content_project_form">
-          <div class="row project_form text-white">
+          <div class="row project_form pb-4 text-white">
             <div class="col-12 col-lg-6 ps-lg-5">
               <span>INNOVATIVE TECHNOLOGY</span>
               <h2>
@@ -322,7 +345,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 text-center">
+            <div class="col-lg-4 col-md-6 py-4 text-center">
               <div class="build_item bg-white me-2 rounded-3">
                 <img src="./img/icon2.png" alt="" />
                 <h5>Business Analysis</h5>
