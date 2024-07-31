@@ -58,13 +58,14 @@ body {
   grid-template-columns: auto 1fr;
   gap: 1rem;
   box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+  height: 150px;
 }
 .contact_item .contact_info h5 {
   font-size: 1.3rem;
   font-weight: 700;
 }
 .contact_item .contact_info span {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   color: #666;
   opacity: 0.8;
